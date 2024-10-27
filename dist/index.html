@@ -8,7 +8,6 @@
         body {
             font-family: system-ui, -apple-system, sans-serif;
             margin: 0;
-            padding: 1rem;
         }
         .popup {
             position: fixed;
@@ -62,9 +61,11 @@
         import Chatbot from "./web.js"
         Chatbot.initFull({
             chatflowid: "915b040d-57d2-45cd-ba3b-54276a3eb5fc",
+            sessionId: "badri-sessionid-20241025",
             apiHost: "https://flowise-r9ft.onrender.com",
             overrideConfig: {
-                    sessionId: "badri-sessionid-20241025"
+                    responsePrompt: "response with emojis",
+                    pineconeNamespace: "badri-data"
                 },
         })
     </script>
